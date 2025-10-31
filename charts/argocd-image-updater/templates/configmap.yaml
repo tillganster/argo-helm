@@ -46,3 +46,7 @@ data:
     registries:
       {{- toYaml . | nindent 6 }}
   {{- end }}
+  {{ with .Values.config.webhook}}
+  webhook.enabled: {{ .enabled | quote }}
+  webhook.port: {{ .port  }}
+  {{- end}}

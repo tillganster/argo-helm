@@ -204,6 +204,12 @@ config:
     #          PubkeyAcceptedAlgorithms +ssh-rsa
     #          HostkeyAlgorithms +ssh-rsa
 
+  webhook:
+    # -- Enable webhook server
+    enabled: false
+    # -- Webhook server port
+    port: 8085
+
 # whether to mount authentication scripts, if enabled, the authentication scripts will be mounted on /scripts that can be used to authenticate with registries (Azure, ECR)
 # refer to https://argocd-image-updater.readthedocs.io/en/stable/configuration/registries/#specifying-credentials-for-accessing-container-registries for more info
 authScripts:

@@ -91,6 +91,8 @@ The `config.registries` value can be used exactly as it looks in the documentati
 | config.registries | list | `[]` | Argo CD Image Updater registries list configuration. More information [here](https://argocd-image-updater.readthedocs.io/en/stable/configuration/registries/). |
 | config.sshConfig.config | string | `""` | Argo CD Image Updater ssh client parameter configuration |
 | config.sshConfig.name | string | `"argocd-image-updater-ssh-config"` | Name of the sshConfig ConfigMap |
+| config.webhook.enabled | bool | `false` | Enable webhook server |
+| config.webhook.port | int | `8085` | Webhook server port |
 | containerPort | int | `8080` | ContainerPort for the deployment |
 | createClusterRoles | bool | `true` | Create cluster roles for cluster-wide installation. |
 | dualStack.ipFamilies | list | `[]` | IP families that should be supported and the order in which they should be applied to ClusterIP as well. Can be IPv4 and/or IPv6. |
